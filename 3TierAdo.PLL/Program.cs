@@ -1,3 +1,5 @@
+using _3TierAdo.BLL.EntityManger;
+
 namespace _3TierAdo.PLL
 {
     internal static class Program

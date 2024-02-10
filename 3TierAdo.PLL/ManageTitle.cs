@@ -22,7 +22,7 @@ namespace _3TierAdo.PLL
         BindingSource bindingSource;
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-           
+
         }
         TitleList titles = TitleManger.GetAllTitle();
 
@@ -32,7 +32,7 @@ namespace _3TierAdo.PLL
             this.listBox1.DataSource = bindingSource;
             this.listBox1.DisplayMember = "title";
             this.listBox1.ValueMember = "title_id";
-         
+
             this.textBox4.DataBindings.Add("Text", bindingSource, "price");
             this.textBox7.DataBindings.Add("Text", bindingSource, "title");
             this.textBox3.DataBindings.Add("Text", bindingSource, "advance");
@@ -44,21 +44,28 @@ namespace _3TierAdo.PLL
             this.comboBox1.DataBindings.Add("SelectedValue", bindingSource, "pub_id");
 
             //Title title = TitleManger.GetTitleByID(listBox1.SelectedValue.ToString());
-            
-            
+
+
         }
 
         private void update_Click(object sender, EventArgs e)
         {
             bindingSource.EndEdit();
-            //List<Title> AlltitlesUpdates = new List<Title>();
-            //AlltitlesUpdates.Add(new Title() { title_id=listBox1.SelectedValue.ToString(), title= this.textBox7.Text, pub_id=comboBox1.SelectedValue.ToString(),price=decimal.Parse(textBox4.Text) });
-            //if (listBox1.SelectedItems.Count>0)
-            //{
-            //    if (TitleManger.EditeAllTitle(AlltitlesUpdates))
-            //        MessageBox.Show("Process  successfully!");
+            List<Title> updatedTitles = bindingSource.DataSource as List<Title>;
+            if (TitleManger.EditeAllTitle(updatedTitles.FindAll(titile => titile.State == BLL.Entities.EntityState.Modified)))
+                MessageBox.Show("Process  successfully!");
+        }
 
-            //}
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (TitleManger.DeleteTitle(this.listBox1.SelectedValue.ToString()))
+                MessageBox.Show("Process  successfully!");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            CreateTitle createTitle = new();
+            createTitle.ShowDialog();
         }
     }
 }

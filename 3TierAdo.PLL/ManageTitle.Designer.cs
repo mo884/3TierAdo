@@ -42,10 +42,13 @@
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
+            button1 = new Button();
+            button2 = new Button();
             SuspendLayout();
             // 
             // listBox1
             // 
+            listBox1.BackColor = SystemColors.InactiveBorder;
             listBox1.FormattingEnabled = true;
             listBox1.ItemHeight = 15;
             listBox1.Location = new Point(537, 10);
@@ -64,12 +67,12 @@
             // 
             // update
             // 
-            update.BackColor = Color.IndianRed;
+            update.BackColor = Color.FromArgb(255, 128, 0);
             update.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             update.ForeColor = SystemColors.ButtonHighlight;
-            update.Location = new Point(153, 386);
+            update.Location = new Point(151, 386);
             update.Name = "update";
-            update.Size = new Size(137, 48);
+            update.Size = new Size(177, 48);
             update.TabIndex = 8;
             update.Text = "Update";
             update.UseVisualStyleBackColor = false;
@@ -169,11 +172,40 @@
             label6.TabIndex = 19;
             label6.Text = "Publisher";
             // 
+            // button1
+            // 
+            button1.BackColor = Color.GreenYellow;
+            button1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = SystemColors.ButtonHighlight;
+            button1.Location = new Point(368, 386);
+            button1.Name = "button1";
+            button1.Size = new Size(119, 48);
+            button1.TabIndex = 20;
+            button1.Text = "Create";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.IndianRed;
+            button2.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button2.ForeColor = SystemColors.ButtonHighlight;
+            button2.Location = new Point(8, 386);
+            button2.Name = "button2";
+            button2.Size = new Size(116, 48);
+            button2.TabIndex = 21;
+            button2.Text = "Deleted";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
+            // 
             // ManageTitle
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(800, 450);
+            Controls.Add(button2);
+            Controls.Add(button1);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
@@ -210,5 +242,7 @@
         private Label label4;
         private Label label5;
         private Label label6;
+        private Button button1;
+        private Button button2;
     }
 }

@@ -101,6 +101,42 @@ namespace _3TierAdo.BLL.EntityManger
             }
         }
 
+        public static bool CreateTitle(Title createTitles)
+        {
+            try
+            {
+
+               
+                    Dictionary<string, object> keyValuePairs = new Dictionary<string, object>()
+                    {
+                        ["title_id"]=createTitles.title_id,
+                        ["title"] =createTitles.title,
+                        ["type"] =createTitles.title,
+                        ["pub_id"] = createTitles.pub_id,
+                        ["price"]=createTitles.price,
+                        ["advance"] = createTitles.advance,
+                        ["royalty"] = createTitles.royalty,
+                        ["ytd_sales"] =createTitles.ytd_sales,
+                        ["notes"] = createTitles.notes,
+                        ["pubUpdate"] = DateTime.Now
+
+                    };
+                    if (dBManger.ExecuteNonQuery("CreateTitle", keyValuePairs)<0)
+                    {
+                        return false;
+                    }
+
+               
+                return true;
+            }
+            catch (Exception)
+            {
+
+                return false;
+            }
+        }
+
+
         public static bool DeleteTitle(List<Title> delteTitles)
         {
             try
@@ -128,7 +164,32 @@ namespace _3TierAdo.BLL.EntityManger
                 return false;
             }
         }
+        public static bool DeleteTitle(string title_Id)
+        {
+            try
+            {
 
+              
+                    Dictionary<string, object> keyValuePairs = new Dictionary<string, object>()
+                    {
+                        ["title_id"]=title_Id,
+
+
+                    };
+                    if (dBManger.ExecuteNonQuery("DeleteTitle", keyValuePairs)<0)
+                    {
+                        return false;
+                    }
+
+                
+                return true;
+            }
+            catch (Exception)
+            {
+
+                return false;
+            }
+        }
         public static Title GetTitleByID(string titleID)
         {
             try
