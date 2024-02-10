@@ -49,49 +49,49 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(180, 305);
+            textBox1.Location = new Point(137, 305);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(365, 23);
             textBox1.TabIndex = 0;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(180, 173);
+            textBox2.Location = new Point(137, 173);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(365, 23);
             textBox2.TabIndex = 1;
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(180, 34);
+            textBox3.Location = new Point(137, 34);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(365, 23);
             textBox3.TabIndex = 2;
             // 
             // textBox5
             // 
-            textBox5.Location = new Point(180, 220);
+            textBox5.Location = new Point(137, 220);
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(365, 23);
             textBox5.TabIndex = 4;
             // 
             // textBox6
             // 
-            textBox6.Location = new Point(180, 258);
+            textBox6.Location = new Point(137, 258);
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(365, 23);
             textBox6.TabIndex = 5;
             // 
             // textBox7
             // 
-            textBox7.Location = new Point(180, 83);
+            textBox7.Location = new Point(137, 83);
             textBox7.Name = "textBox7";
             textBox7.Size = new Size(365, 23);
             textBox7.TabIndex = 6;
             // 
             // textBox8
             // 
-            textBox8.Location = new Point(180, 348);
+            textBox8.Location = new Point(137, 348);
             textBox8.Name = "textBox8";
             textBox8.Size = new Size(365, 23);
             textBox8.TabIndex = 7;
@@ -101,7 +101,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
             label1.ForeColor = Color.MediumSpringGreen;
-            label1.Location = new Point(99, 34);
+            label1.Location = new Point(56, 34);
             label1.Name = "label1";
             label1.Size = new Size(75, 25);
             label1.TabIndex = 8;
@@ -112,7 +112,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
             label2.ForeColor = Color.MediumSpringGreen;
-            label2.Location = new Point(99, 84);
+            label2.Location = new Point(56, 84);
             label2.Name = "label2";
             label2.Size = new Size(46, 25);
             label2.TabIndex = 9;
@@ -123,7 +123,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
             label3.ForeColor = Color.MediumSpringGreen;
-            label3.Location = new Point(99, 129);
+            label3.Location = new Point(56, 129);
             label3.Name = "label3";
             label3.Size = new Size(73, 25);
             label3.TabIndex = 10;
@@ -134,7 +134,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
             label4.ForeColor = Color.MediumSpringGreen;
-            label4.Location = new Point(99, 174);
+            label4.Location = new Point(56, 174);
             label4.Name = "label4";
             label4.Size = new Size(56, 25);
             label4.TabIndex = 11;
@@ -145,7 +145,7 @@
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
             label5.ForeColor = Color.MediumSpringGreen;
-            label5.Location = new Point(91, 221);
+            label5.Location = new Point(48, 221);
             label5.Name = "label5";
             label5.Size = new Size(85, 25);
             label5.TabIndex = 12;
@@ -156,7 +156,7 @@
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
             label6.ForeColor = Color.MediumSpringGreen;
-            label6.Location = new Point(99, 259);
+            label6.Location = new Point(56, 259);
             label6.Name = "label6";
             label6.Size = new Size(74, 25);
             label6.TabIndex = 13;
@@ -167,7 +167,7 @@
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
             label7.ForeColor = Color.MediumSpringGreen;
-            label7.Location = new Point(89, 306);
+            label7.Location = new Point(46, 306);
             label7.Name = "label7";
             label7.Size = new Size(90, 25);
             label7.TabIndex = 14;
@@ -178,7 +178,7 @@
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
             label8.ForeColor = Color.MediumSpringGreen;
-            label8.Location = new Point(99, 349);
+            label8.Location = new Point(56, 349);
             label8.Name = "label8";
             label8.Size = new Size(61, 25);
             label8.TabIndex = 15;
@@ -187,7 +187,7 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(180, 131);
+            comboBox1.Location = new Point(137, 131);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(365, 23);
             comboBox1.TabIndex = 16;
@@ -197,7 +197,7 @@
             button1.BackColor = Color.MediumSpringGreen;
             button1.Font = new Font("Tahoma", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(219, 393);
+            button1.Location = new Point(176, 393);
             button1.Name = "button1";
             button1.Size = new Size(275, 45);
             button1.TabIndex = 17;
@@ -210,7 +210,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(64, 64, 64);
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(569, 450);
             Controls.Add(button1);
             Controls.Add(comboBox1);
             Controls.Add(label8);

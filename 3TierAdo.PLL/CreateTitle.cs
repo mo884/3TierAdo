@@ -51,6 +51,7 @@ namespace _3TierAdo.PLL
             };
             if (TitleManger.CreateTitle(updatedTitle))
                 this.Close();
+        
         }
     }
 }
