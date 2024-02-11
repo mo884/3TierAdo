@@ -13,7 +13,7 @@ namespace _3TierAdo.PLL
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new ManageTitle());
+            Application.Run(new Form1());
         }
     }
 }

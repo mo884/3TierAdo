@@ -10,7 +10,7 @@ namespace _3TierAdo.BLL.Entities
     {
         private string pvTitle;
         private string? pvpub_id;
-        private decimal? pvprice;
+        private decimal pvprice;
         private string pvNotes;
         public string title_id { get; set; }
         
@@ -43,7 +43,7 @@ namespace _3TierAdo.BLL.Entities
             } }
 
 
-        public decimal? price
+        public decimal price
         {
             get => pvprice; set
             {
@@ -58,9 +58,9 @@ namespace _3TierAdo.BLL.Entities
                 }
             }
         }
-        public decimal? advance { get; set; }
-        public int? royalty { get; set; }
-        public int? ytd_sales { get; set; }
+        public decimal advance { get; set; }
+        public int royalty { get; set; }
+        public int ytd_sales { get; set; }
         public string? notes
         {
             get => pvNotes; set

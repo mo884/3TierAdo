@@ -50,10 +50,10 @@ namespace _3TierAdo.PLL
 
         private void update_Click(object sender, EventArgs e)
         {
-            bindingSource.EndEdit();
             List<Title> updatedTitles = bindingSource.DataSource as List<Title>;
             if (TitleManger.EditeAllTitle(updatedTitles.FindAll(titile => titile.State == BLL.Entities.EntityState.Modified)))
                 MessageBox.Show("Process  successfully!");
+           
 
         }
 

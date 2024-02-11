@@ -260,8 +260,8 @@ namespace _3TierAdo.BLL.EntityManger
                 title.title = datarow.Field<string?>("title").ToString();
                 title.pub_id =  datarow.Field<string?>("pub_id").ToString();
                 title.notes =  datarow.Field<string?>("notes").ToString();
-                title.price = datarow.Field<decimal?>("price");
-                title.advance = datarow.Field<decimal?>("advance");
+                title.price = datarow.Field<decimal>("price");
+                title.advance = datarow.Field<decimal>("advance");
 
                 if (int.TryParse(datarow.Field<int?>("royalty").ToString(), out int Tempdtint))
                     title.royalty = Tempdtint;
